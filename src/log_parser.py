@@ -1,0 +1,13 @@
+def parse_logs(file_path):
+    info = 0
+    warning = 0
+    error = 0
+    with open (file_path,'r') as file:
+        for line in file:
+            if 'INFO' in line:
+                info += 1
+            elif 'WARNING' in line:
+                warning += 1
+            elif 'ERROR' in line:
+                error += 1
+    return info,warning,error
