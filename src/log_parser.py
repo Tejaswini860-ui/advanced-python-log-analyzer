@@ -11,3 +11,12 @@ def parse_logs(file_path):
             elif 'ERROR' in line:
                 error += 1
     return info,warning,error
+
+def extract_errors(file_path):
+    errors = []
+    with open (file_path,"r") as file:
+        for line in file:
+            if "ERROR" in line:
+                error_message = line.replace("ERROR", "").strip()
+            errors.append(error_message)
+    return errors
