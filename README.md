@@ -81,9 +81,6 @@ This project is part of an Advanced Python learning roadmap (March–May 2026).
 
 - Display detected error messages in the report
 
-## Day 3
-
-- Implement error frequency analysis using Python dictionaries
 
 ## Example Output:
 
@@ -136,19 +133,12 @@ Detected Errors:
 - Server timeout
 - Failed authentication
 
-===== Error Frequency Report =====
-
-Database connection failed : 1
-Server timeout : 1
-Failed authentication : 1
-
 ---
 
 ## Technologies Used
 
 - Python 3.12
 - File Handling
-- Dictionaries
 - Git & GitHub
 - Modular Programming
 
