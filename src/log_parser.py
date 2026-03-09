@@ -18,5 +18,5 @@ def extract_errors(file_path):
         for line in file:
             if "ERROR" in line:
                 error_message = line.replace("ERROR", "").strip()
-            errors.append(error_message)
+                errors.append(error_message)
     return errors
