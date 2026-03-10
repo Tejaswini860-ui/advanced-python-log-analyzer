@@ -150,3 +150,83 @@ Detected Errors:
 - Generate error report file
 - Refactor code using Object-Oriented Programming
 - Improve project documentation
+
+## Day 3
+
+- Implemented error frequency analysis
+- Uses Python dictionaries to count occurrences of each error
+
+## Example Output:
+
+===== Error Frequency Report =====
+
+Database connection failed : 1
+Server timeout : 1
+Failed authentication : 1
+
+---
+
+## Project Structure
+
+advance_python_project
+│
+├── data
+│   └── logs.txt
+│
+├── src
+│   └── log_parser.py
+│
+├── outputs
+│
+├── main.py
+├── README.md
+└── requirements.txt
+
+---
+
+## How to Run
+
+Open terminal and run:
+
+python main.py
+
+---
+
+## Example Output
+
+===== Log Analysis Report =====
+
+INFO Logs: 3
+WARNING Logs: 3
+ERROR Logs: 3
+
+Total Logs Processed: 9
+
+Detected Errors:
+- Database connection failed
+- Server timeout
+- Failed authentication
+
+===== Error Frequency Report =====
+
+Database connection failed : 1
+Server timeout : 1
+Failed authentication : 1
+
+---
+
+## Technologies Used
+
+- Python 3.12
+- File Handling
+- Dictionaries
+- Modular Programming
+- Git & GitHub
+
+---
+
+## Upcoming Features (Week 2)
+
+- Detect most frequent error
+- Generate error report file
+- Code refactoring using Object-Oriented Programming
