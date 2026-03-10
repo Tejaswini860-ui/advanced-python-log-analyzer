@@ -1,4 +1,4 @@
-from src.log_parser import parse_logs,extract_errors
+from src.log_parser import parse_logs,extract_errors,error_frequency
 file_path = 'data/logs.txt'
 info,warning,error = parse_logs(file_path)
 print("===== Log Analysis Report ==== ")
@@ -12,4 +12,8 @@ errors = extract_errors(file_path)
 print("\nDetected Errors:")
 for err in errors:
     print("-",err)
+print("\n ==== Error Frequency Report ====")
+freq = error_frequency(file_path)
+for err,count in freq.items():
+    print(err,":",count)
 

@@ -20,3 +20,14 @@ def extract_errors(file_path):
                 error_message = line.replace("ERROR", "").strip()
                 errors.append(error_message)
     return errors
+def error_frequency(file_path):
+    error_count = {}
+    with open (file_path,'r') as file:
+        for line in file:
+            if "ERROR" in line:
+                error_message = line.replace("ERROR","").strip()
+                if error_message in error_count:
+                    error_count[error_message] += 1
+                else:
+                    error_count[error_message ] = 1 
+    return error_count
