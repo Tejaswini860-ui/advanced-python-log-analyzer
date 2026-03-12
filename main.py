@@ -8,6 +8,7 @@ print("WARNING Logs:",warning)
 print("ERROR Logs:",error)
 total_logs = info + warning + error
 print("\nTotal Logs Processed:",total_logs)
+print("\n----------------------------------")
 errors = extract_errors(file_path)
 print("\nDetected Errors:")
 for err in errors:
@@ -16,4 +17,5 @@ print("\n ==== Error Frequency Report ====")
 freq = error_frequency(file_path)
 for err,count in freq.items():
     print(err,":",count)
+print("Log Analysis Completed Successfully")
 

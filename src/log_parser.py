@@ -10,9 +10,7 @@ def parse_logs(file_path):
                 warning += 1
             elif 'ERROR' in line:
                 error += 1
-            elif 'DEBUG' in line:
-                debug += 1
-    return info,warning,error,debug
+    return info,warning,error
 
 def extract_errors(file_path):
     errors = []
