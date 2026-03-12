@@ -1,118 +1,93 @@
-# Intelligent Log Monitoring System
+## Advanced Python Log Analyzer
+
 ## Project Overview
-This project analyzes server log files and generates a report showing the number of INFO, WARNING, and ERROR logs.
 
-This project is part of an **Advanced Python learning roadmap (March–May 2026).**
+The Advanced Python Log Analyzer is a Python-based tool designed to analyze system log files.
+It processes log data to extract useful insights such as log level statistics, detected errors, and error frequency.
 
----
-
-## Week 1 Features
-- Read log file
-- Parse log entries
-- Count INFO logs
-- Count WARNING logs
-- Count ERROR logs
-- Display total logs processed
+This project helps demonstrate practical Python skills including file handling, string processing, data analysis, and modular programming.
 
 ---
+
 ## Project Structure
 
 advance_python_project
 │
 ├── data
-│   └── logs.txt
+│   └── logs.txt                # Sample log file used for analysis
 │
 ├── src
-│   └── log_parser.py
+│   └── log_parser.py           # Functions for parsing and analyzing logs
 │
-├── outputs
+├── outputs                     # Directory for future generated reports
 │
-├── main.py
-├── README.md
-└── requirements.txt
+├── main.py                     # Main script that runs the log analyzer
+├── README.md                   # Project documentation
+└── requirements.txt            # Python dependencies
 
 ---
-## How to Run
 
-Open terminal and run:
+## Features Implemented
 
-python main.py
+1. Log Level Analysis
+
+The program reads the log file and counts different log levels:
+
+- INFO
+- WARNING
+- ERROR
+
+This helps in understanding the distribution of log events.
 
 ---
-## Sample Output
 
-===== Log Analysis Report =====
+2. Total Log Count
 
-INFO Logs: 3  
-WARNING Logs: 3  
-ERROR Logs: 3  
+The analyzer calculates the total number of logs processed in the file.
+
+Example output:
 
 Total Logs Processed: 9
 
-## Intelligent Log Monitoring System
+---
 
-## Project Overview
+3. Error Detection
 
-This project analyzes server log files and generates insights from them.
-It identifies different log levels (INFO, WARNING, ERROR), extracts error messages, and performs basic analytics such as error frequency detection.
+The program extracts all log entries marked as ERROR and displays them clearly.
 
-This project is part of an Advanced Python learning roadmap (March–May 2026).
+Example:
+
+Detected Errors:
+
+- Database connection failed
+- Server timeout
+- Failed authentication
 
 ---
 
-## Week 1 Features (Completed)
+4. Error Frequency Analysis
 
-- Read log file
-- Parse log entries
-- Count INFO logs
-- Count WARNING logs
-- Count ERROR logs
-- Display total logs processed
+The analyzer counts how many times each error appears in the log file.
 
----
+## Example:
 
-## Week 2 Features (Completed)
-
-## Day 1
-
-- Extract error messages from log files
-
-## Day 2
-
-- Display detected error messages in the report
-
-
-## Example Output:
-
-===== Error Frequency Report =====
+Error Frequency Report:
 
 Database connection failed : 1
 Server timeout : 1
 Failed authentication : 1
 
----
-
-## Project Structure
-
-advance_python_project
-│
-├── data
-│   └── logs.txt
-│
-├── src
-│   └── log_parser.py
-│
-├── outputs
-│
-├── main.py
-├── README.md
-└── requirements.txt
+This helps identify common system issues quickly.
 
 ---
 
-## How to Run
+How to Run the Project
 
-Open terminal and run:
+Step 1: Navigate to the Project Folder
+
+cd advance_python_project
+
+Step 2: Run the Analyzer
 
 python main.py
 
@@ -129,85 +104,12 @@ ERROR Logs: 3
 Total Logs Processed: 9
 
 Detected Errors:
+
 - Database connection failed
 - Server timeout
 - Failed authentication
 
----
-
-## Technologies Used
-
-- Python 3.12
-- File Handling
-- Git & GitHub
-- Modular Programming
-
----
-
-## Future Improvements (Week 2 Remaining)
-
-- Detect most frequent error
-- Generate error report file
-- Refactor code using Object-Oriented Programming
-- Improve project documentation
-
-## Day 3
-
-- Implemented error frequency analysis
-- Uses Python dictionaries to count occurrences of each error
-
-## Example Output:
-
-===== Error Frequency Report =====
-
-Database connection failed : 1
-Server timeout : 1
-Failed authentication : 1
-
----
-
-## Project Structure
-
-advance_python_project
-│
-├── data
-│   └── logs.txt
-│
-├── src
-│   └── log_parser.py
-│
-├── outputs
-│
-├── main.py
-├── README.md
-└── requirements.txt
-
----
-
-## How to Run
-
-Open terminal and run:
-
-python main.py
-
----
-
-## Example Output
-
-===== Log Analysis Report =====
-
-INFO Logs: 3
-WARNING Logs: 3
-ERROR Logs: 3
-
-Total Logs Processed: 9
-
-Detected Errors:
-- Database connection failed
-- Server timeout
-- Failed authentication
-
-===== Error Frequency Report =====
+==== Error Frequency Report ====
 
 Database connection failed : 1
 Server timeout : 1
@@ -217,16 +119,25 @@ Failed authentication : 1
 
 ## Technologies Used
 
-- Python 3.12
+- Python 3
 - File Handling
-- Dictionaries
+- Dictionary Data Structures
 - Modular Programming
-- Git & GitHub
 
 ---
 
-## Upcoming Features (Week 2)
+## Future Improvements
 
-- Detect most frequent error
-- Generate error report file
-- Code refactoring using Object-Oriented Programming
+Planned enhancements include:
+
+- Export analysis results to report files
+- Generate structured reports in the "outputs" folder
+- Add log filtering capabilities
+- Improve error pattern detection
+- Build visualization dashboards for log analysis
+
+---
+
+## Author
+
+Tejaswini Chimekala
