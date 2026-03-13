@@ -1,0 +1,17 @@
+===== Log Analysis Report =====
+
+INFO Logs: 3
+WARNING Logs: 3
+ERROR Logs: 3
+
+Total Logs Processed: 9
+
+Detected Errors:
+- Database connection failed
+- Server timeout
+- Failed authentication
+
+==== Error Frequency Report ====
+Database connection failed : 1
+Server timeout : 1
+Failed authentication : 1
